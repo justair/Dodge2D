@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'Dodge2D' target in the 'Dodge2D' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif

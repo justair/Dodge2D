@@ -294,9 +294,36 @@
 		5954735717C75924003469DF /* b2WheelJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5954735617C75924003469DF /* b2WheelJoint.cpp */; };
 		5954735B17C75924003469DF /* b2Rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5954735A17C75924003469DF /* b2Rope.cpp */; };
 		5954736317C75924003469DF /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5954736217C75924003469DF /* libwebsockets.a */; };
-		5954736917C75924003469DF /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5954736817C75924003469DF /* AppDelegate.cpp */; };
-		5954736C17C75924003469DF /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5954736B17C75924003469DF /* HelloWorldScene.cpp */; };
 		5954736E17C75925003469DF /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 5954736D17C75925003469DF /* blocks.png */; };
+		5954739617C759F9003469DF /* BackLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5954737817C759F9003469DF /* BackLayer.cpp */; };
+		5954739717C759F9003469DF /* Box2dHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5954737A17C759F9003469DF /* Box2dHandler.cpp */; };
+		5954739817C759F9003469DF /* EndLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5954737C17C759F9003469DF /* EndLayer.cpp */; };
+		5954739917C759F9003469DF /* EndScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5954737E17C759F9003469DF /* EndScene.cpp */; };
+		5954739A17C759F9003469DF /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5954738017C759F9003469DF /* GLES-Render.cpp */; };
+		5954739B17C759F9003469DF /* Global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5954738217C759F9003469DF /* Global.cpp */; };
+		5954739C17C759F9003469DF /* HpSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5954738417C759F9003469DF /* HpSprite.cpp */; };
+		5954739D17C759F9003469DF /* MenuLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5954738617C759F9003469DF /* MenuLayer.cpp */; };
+		5954739E17C759F9003469DF /* MenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5954738817C759F9003469DF /* MenuScene.cpp */; };
+		5954739F17C759F9003469DF /* NextLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5954738A17C759F9003469DF /* NextLayer.cpp */; };
+		595473A017C759F9003469DF /* NextScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5954738C17C759F9003469DF /* NextScene.cpp */; };
+		595473A117C759F9003469DF /* SpriteLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5954738F17C759F9003469DF /* SpriteLayer.cpp */; };
+		595473A217C759F9003469DF /* SpriteScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5954739117C759F9003469DF /* SpriteScene.cpp */; };
+		595473A317C759F9003469DF /* TouchLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5954739317C759F9003469DF /* TouchLayer.cpp */; };
+		595473A617C75BFE003469DF /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 595473A417C75BFE003469DF /* AppDelegate.cpp */; };
+		595473B817C76187003469DF /* Abadi40.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 595473AA17C76187003469DF /* Abadi40.fnt */; };
+		595473B917C76187003469DF /* Abadi40.png in Resources */ = {isa = PBXBuildFile; fileRef = 595473AB17C76187003469DF /* Abadi40.png */; };
+		595473BA17C76187003469DF /* backgroud.png in Resources */ = {isa = PBXBuildFile; fileRef = 595473AC17C76187003469DF /* backgroud.png */; };
+		595473BB17C76187003469DF /* jiansu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 595473AD17C76187003469DF /* jiansu.mp3 */; };
+		595473BC17C76187003469DF /* konqa32-hd.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 595473AE17C76187003469DF /* konqa32-hd.fnt */; };
+		595473BD17C76187003469DF /* konqa32-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 595473AF17C76187003469DF /* konqa32-hd.png */; };
+		595473BE17C76187003469DF /* konqa32.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 595473B017C76187003469DF /* konqa32.fnt */; };
+		595473BF17C76187003469DF /* konqa32.png in Resources */ = {isa = PBXBuildFile; fileRef = 595473B117C76187003469DF /* konqa32.png */; };
+		595473C017C76187003469DF /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 595473B217C76187003469DF /* music.mp3 */; };
+		595473C117C76187003469DF /* pao_0001.png in Resources */ = {isa = PBXBuildFile; fileRef = 595473B317C76187003469DF /* pao_0001.png */; };
+		595473C217C76187003469DF /* pick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 595473B417C76187003469DF /* pick.mp3 */; };
+		595473C317C76187003469DF /* pick2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 595473B517C76187003469DF /* pick2.mp3 */; };
+		595473C417C76187003469DF /* ui.plist in Resources */ = {isa = PBXBuildFile; fileRef = 595473B617C76187003469DF /* ui.plist */; };
+		595473C517C76187003469DF /* ui.png in Resources */ = {isa = PBXBuildFile; fileRef = 595473B717C76187003469DF /* ui.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -918,11 +945,57 @@
 		5954736017C75924003469DF /* libwebsockets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libwebsockets.h; path = libs/libwebsockets/ios/include/libwebsockets.h; sourceTree = "<group>"; };
 		5954736217C75924003469DF /* libwebsockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebsockets.a; path = libs/libwebsockets/ios/lib/libwebsockets.a; sourceTree = "<group>"; };
 		5954736517C75924003469DF /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
-		5954736717C75924003469DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
-		5954736817C75924003469DF /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
-		5954736A17C75924003469DF /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
-		5954736B17C75924003469DF /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
 		5954736D17C75925003469DF /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
+		5954737717C759F9003469DF /* B2Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = B2Sprite.h; path = Classes/B2Sprite.h; sourceTree = "<group>"; };
+		5954737817C759F9003469DF /* BackLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BackLayer.cpp; path = Classes/BackLayer.cpp; sourceTree = "<group>"; };
+		5954737917C759F9003469DF /* BackLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackLayer.h; path = Classes/BackLayer.h; sourceTree = "<group>"; };
+		5954737A17C759F9003469DF /* Box2dHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Box2dHandler.cpp; path = Classes/Box2dHandler.cpp; sourceTree = "<group>"; };
+		5954737B17C759F9003469DF /* Box2dHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Box2dHandler.h; path = Classes/Box2dHandler.h; sourceTree = "<group>"; };
+		5954737C17C759F9003469DF /* EndLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EndLayer.cpp; path = Classes/EndLayer.cpp; sourceTree = "<group>"; };
+		5954737D17C759F9003469DF /* EndLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EndLayer.h; path = Classes/EndLayer.h; sourceTree = "<group>"; };
+		5954737E17C759F9003469DF /* EndScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EndScene.cpp; path = Classes/EndScene.cpp; sourceTree = "<group>"; };
+		5954737F17C759F9003469DF /* EndScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EndScene.h; path = Classes/EndScene.h; sourceTree = "<group>"; };
+		5954738017C759F9003469DF /* GLES-Render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "GLES-Render.cpp"; path = "Classes/GLES-Render.cpp"; sourceTree = "<group>"; };
+		5954738117C759F9003469DF /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GLES-Render.h"; path = "Classes/GLES-Render.h"; sourceTree = "<group>"; };
+		5954738217C759F9003469DF /* Global.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Global.cpp; path = Classes/Global.cpp; sourceTree = "<group>"; };
+		5954738317C759F9003469DF /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Global.h; path = Classes/Global.h; sourceTree = "<group>"; };
+		5954738417C759F9003469DF /* HpSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HpSprite.cpp; path = Classes/HpSprite.cpp; sourceTree = "<group>"; };
+		5954738517C759F9003469DF /* HpSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HpSprite.h; path = Classes/HpSprite.h; sourceTree = "<group>"; };
+		5954738617C759F9003469DF /* MenuLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MenuLayer.cpp; path = Classes/MenuLayer.cpp; sourceTree = "<group>"; };
+		5954738717C759F9003469DF /* MenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuLayer.h; path = Classes/MenuLayer.h; sourceTree = "<group>"; };
+		5954738817C759F9003469DF /* MenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MenuScene.cpp; path = Classes/MenuScene.cpp; sourceTree = "<group>"; };
+		5954738917C759F9003469DF /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuScene.h; path = Classes/MenuScene.h; sourceTree = "<group>"; };
+		5954738A17C759F9003469DF /* NextLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NextLayer.cpp; path = Classes/NextLayer.cpp; sourceTree = "<group>"; };
+		5954738B17C759F9003469DF /* NextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NextLayer.h; path = Classes/NextLayer.h; sourceTree = "<group>"; };
+		5954738C17C759F9003469DF /* NextScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NextScene.cpp; path = Classes/NextScene.cpp; sourceTree = "<group>"; };
+		5954738D17C759F9003469DF /* NextScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NextScene.h; path = Classes/NextScene.h; sourceTree = "<group>"; };
+		5954738E17C759F9003469DF /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Classes/Prefix.pch; sourceTree = "<group>"; };
+		5954738F17C759F9003469DF /* SpriteLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteLayer.cpp; path = Classes/SpriteLayer.cpp; sourceTree = "<group>"; };
+		5954739017C759F9003469DF /* SpriteLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteLayer.h; path = Classes/SpriteLayer.h; sourceTree = "<group>"; };
+		5954739117C759F9003469DF /* SpriteScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteScene.cpp; path = Classes/SpriteScene.cpp; sourceTree = "<group>"; };
+		5954739217C759F9003469DF /* SpriteScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteScene.h; path = Classes/SpriteScene.h; sourceTree = "<group>"; };
+		5954739317C759F9003469DF /* TouchLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TouchLayer.cpp; path = Classes/TouchLayer.cpp; sourceTree = "<group>"; };
+		5954739417C759F9003469DF /* TouchLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchLayer.h; path = Classes/TouchLayer.h; sourceTree = "<group>"; };
+		595473A417C75BFE003469DF /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
+		595473A517C75BFE003469DF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		595473AA17C76187003469DF /* Abadi40.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Abadi40.fnt; path = Resources/Abadi40.fnt; sourceTree = "<group>"; };
+		595473AB17C76187003469DF /* Abadi40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Abadi40.png; path = Resources/Abadi40.png; sourceTree = "<group>"; };
+		595473AC17C76187003469DF /* backgroud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backgroud.png; path = Resources/backgroud.png; sourceTree = "<group>"; };
+		595473AD17C76187003469DF /* jiansu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = jiansu.mp3; path = Resources/jiansu.mp3; sourceTree = "<group>"; };
+		595473AE17C76187003469DF /* konqa32-hd.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "konqa32-hd.fnt"; path = "Resources/konqa32-hd.fnt"; sourceTree = "<group>"; };
+		595473AF17C76187003469DF /* konqa32-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "konqa32-hd.png"; path = "Resources/konqa32-hd.png"; sourceTree = "<group>"; };
+		595473B017C76187003469DF /* konqa32.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = konqa32.fnt; path = Resources/konqa32.fnt; sourceTree = "<group>"; };
+		595473B117C76187003469DF /* konqa32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = konqa32.png; path = Resources/konqa32.png; sourceTree = "<group>"; };
+		595473B217C76187003469DF /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = music.mp3; path = Resources/music.mp3; sourceTree = "<group>"; };
+		595473B317C76187003469DF /* pao_0001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pao_0001.png; path = Resources/pao_0001.png; sourceTree = "<group>"; };
+		595473B417C76187003469DF /* pick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pick.mp3; path = Resources/pick.mp3; sourceTree = "<group>"; };
+		595473B517C76187003469DF /* pick2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pick2.mp3; path = Resources/pick2.mp3; sourceTree = "<group>"; };
+		595473B617C76187003469DF /* ui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ui.plist; path = Resources/ui.plist; sourceTree = "<group>"; };
+		595473B717C76187003469DF /* ui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ui.png; path = Resources/ui.png; sourceTree = "<group>"; };
+		599B2DB617CD9CB00064806A /* EnumType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnumType.h; path = Classes/EnumType.h; sourceTree = "<group>"; };
+		599BB37E17CC6ED800CA2CD4 /* BaseControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseControl.h; path = Classes/BaseControl.h; sourceTree = "<group>"; };
+		599BB37F17CC6ED800CA2CD4 /* BasePhyLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasePhyLayer.h; path = Classes/BasePhyLayer.h; sourceTree = "<group>"; };
+		599BB38017CC6EEF00CA2CD4 /* EventType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventType.h; path = Classes/EventType.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -994,6 +1067,20 @@
 		59546FA417C7591E003469DF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				595473AA17C76187003469DF /* Abadi40.fnt */,
+				595473AB17C76187003469DF /* Abadi40.png */,
+				595473AC17C76187003469DF /* backgroud.png */,
+				595473AD17C76187003469DF /* jiansu.mp3 */,
+				595473AE17C76187003469DF /* konqa32-hd.fnt */,
+				595473AF17C76187003469DF /* konqa32-hd.png */,
+				595473B017C76187003469DF /* konqa32.fnt */,
+				595473B117C76187003469DF /* konqa32.png */,
+				595473B217C76187003469DF /* music.mp3 */,
+				595473B317C76187003469DF /* pao_0001.png */,
+				595473B417C76187003469DF /* pick.mp3 */,
+				595473B517C76187003469DF /* pick2.mp3 */,
+				595473B617C76187003469DF /* ui.plist */,
+				595473B717C76187003469DF /* ui.png */,
 				59546FA517C7591E003469DF /* CloseNormal.png */,
 				59546FA717C7591E003469DF /* CloseSelected.png */,
 				59546FA917C7591E003469DF /* Default.png */,
@@ -2192,12 +2279,60 @@
 		5954736617C75924003469DF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5954736717C75924003469DF /* AppDelegate.h */,
-				5954736817C75924003469DF /* AppDelegate.cpp */,
-				5954736A17C75924003469DF /* HelloWorldScene.h */,
-				5954736B17C75924003469DF /* HelloWorldScene.cpp */,
+				599B2DB617CD9CB00064806A /* EnumType.h */,
+				599BB37D17CC6DBE00CA2CD4 /* base */,
+				599BB38117CC86F800CA2CD4 /* view */,
+				595473A517C75BFE003469DF /* AppDelegate.h */,
+				595473A417C75BFE003469DF /* AppDelegate.cpp */,
+				599BB38017CC6EEF00CA2CD4 /* EventType.h */,
+				5954737A17C759F9003469DF /* Box2dHandler.cpp */,
+				5954737B17C759F9003469DF /* Box2dHandler.h */,
+				5954738F17C759F9003469DF /* SpriteLayer.cpp */,
+				5954739017C759F9003469DF /* SpriteLayer.h */,
+				5954738017C759F9003469DF /* GLES-Render.cpp */,
+				5954738117C759F9003469DF /* GLES-Render.h */,
+				5954738217C759F9003469DF /* Global.cpp */,
+				5954738317C759F9003469DF /* Global.h */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		599BB37D17CC6DBE00CA2CD4 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				5954737717C759F9003469DF /* B2Sprite.h */,
+				599BB37E17CC6ED800CA2CD4 /* BaseControl.h */,
+				599BB37F17CC6ED800CA2CD4 /* BasePhyLayer.h */,
+			);
+			name = base;
+			sourceTree = "<group>";
+		};
+		599BB38117CC86F800CA2CD4 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				5954737C17C759F9003469DF /* EndLayer.cpp */,
+				5954737D17C759F9003469DF /* EndLayer.h */,
+				5954737E17C759F9003469DF /* EndScene.cpp */,
+				5954738417C759F9003469DF /* HpSprite.cpp */,
+				5954738517C759F9003469DF /* HpSprite.h */,
+				5954738617C759F9003469DF /* MenuLayer.cpp */,
+				5954738717C759F9003469DF /* MenuLayer.h */,
+				5954738817C759F9003469DF /* MenuScene.cpp */,
+				5954738917C759F9003469DF /* MenuScene.h */,
+				5954738A17C759F9003469DF /* NextLayer.cpp */,
+				5954738B17C759F9003469DF /* NextLayer.h */,
+				5954738C17C759F9003469DF /* NextScene.cpp */,
+				5954738D17C759F9003469DF /* NextScene.h */,
+				5954738E17C759F9003469DF /* Prefix.pch */,
+				5954739117C759F9003469DF /* SpriteScene.cpp */,
+				5954739217C759F9003469DF /* SpriteScene.h */,
+				5954739317C759F9003469DF /* TouchLayer.cpp */,
+				5954739417C759F9003469DF /* TouchLayer.h */,
+				5954737F17C759F9003469DF /* EndScene.h */,
+				5954737817C759F9003469DF /* BackLayer.cpp */,
+				5954737917C759F9003469DF /* BackLayer.h */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2264,6 +2399,20 @@
 				5954705917C7591F003469DF /* ChangeLog in Resources */,
 				595471CD17C75922003469DF /* project.pbxproj in Resources */,
 				5954736E17C75925003469DF /* blocks.png in Resources */,
+				595473B817C76187003469DF /* Abadi40.fnt in Resources */,
+				595473B917C76187003469DF /* Abadi40.png in Resources */,
+				595473BA17C76187003469DF /* backgroud.png in Resources */,
+				595473BB17C76187003469DF /* jiansu.mp3 in Resources */,
+				595473BC17C76187003469DF /* konqa32-hd.fnt in Resources */,
+				595473BD17C76187003469DF /* konqa32-hd.png in Resources */,
+				595473BE17C76187003469DF /* konqa32.fnt in Resources */,
+				595473BF17C76187003469DF /* konqa32.png in Resources */,
+				595473C017C76187003469DF /* music.mp3 in Resources */,
+				595473C117C76187003469DF /* pao_0001.png in Resources */,
+				595473C217C76187003469DF /* pick.mp3 in Resources */,
+				595473C317C76187003469DF /* pick2.mp3 in Resources */,
+				595473C417C76187003469DF /* ui.plist in Resources */,
+				595473C517C76187003469DF /* ui.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2537,8 +2686,21 @@
 				5954735417C75924003469DF /* b2WeldJoint.cpp in Sources */,
 				5954735717C75924003469DF /* b2WheelJoint.cpp in Sources */,
 				5954735B17C75924003469DF /* b2Rope.cpp in Sources */,
-				5954736917C75924003469DF /* AppDelegate.cpp in Sources */,
-				5954736C17C75924003469DF /* HelloWorldScene.cpp in Sources */,
+				5954739617C759F9003469DF /* BackLayer.cpp in Sources */,
+				5954739717C759F9003469DF /* Box2dHandler.cpp in Sources */,
+				5954739817C759F9003469DF /* EndLayer.cpp in Sources */,
+				5954739917C759F9003469DF /* EndScene.cpp in Sources */,
+				5954739A17C759F9003469DF /* GLES-Render.cpp in Sources */,
+				5954739B17C759F9003469DF /* Global.cpp in Sources */,
+				5954739C17C759F9003469DF /* HpSprite.cpp in Sources */,
+				5954739D17C759F9003469DF /* MenuLayer.cpp in Sources */,
+				5954739E17C759F9003469DF /* MenuScene.cpp in Sources */,
+				5954739F17C759F9003469DF /* NextLayer.cpp in Sources */,
+				595473A017C759F9003469DF /* NextScene.cpp in Sources */,
+				595473A117C759F9003469DF /* SpriteLayer.cpp in Sources */,
+				595473A217C759F9003469DF /* SpriteScene.cpp in Sources */,
+				595473A317C759F9003469DF /* TouchLayer.cpp in Sources */,
+				595473A617C75BFE003469DF /* AppDelegate.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2574,6 +2736,7 @@
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2606,6 +2769,7 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2633,6 +2797,7 @@
 					"-websockets",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				USER_HEADER_SEARCH_PATHS = "\"Dodge2D/libs\"";
 				WRAPPER_EXTENSION = app;
 			};
@@ -2659,6 +2824,7 @@
 					"-websockets",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				USER_HEADER_SEARCH_PATHS = "\"Dodge2D/libs\"";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -2675,7 +2841,7 @@
 				5954737017C75925003469DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		5954737117C75925003469DF /* Build configuration list for PBXNativeTarget "Dodge2D" */ = {
 			isa = XCConfigurationList;
@@ -2684,6 +2850,7 @@
 				5954737317C75925003469DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

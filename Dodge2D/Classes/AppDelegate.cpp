@@ -1,16 +1,16 @@
 //
-//  Dodge2DAppDelegate.cpp
-//  Dodge2D
+//  dodgeAppDelegate.cpp
+//  dodge
 //
-//  Created by 赵 立元 on 13-8-23.
-//  Copyright __MyCompanyName__ 2013年. All rights reserved.
+//  Created by Justair on 13-7-31.
+//  Copyright __Justair__ 2013年. All rights reserved.
 //
 
 #include "AppDelegate.h"
 
 #include "cocos2d.h"
 #include "SimpleAudioEngine.h"
-#include "HelloWorldScene.h"
+#include "MenuScene.h"
 
 USING_NS_CC;
 using namespace CocosDenshion;
@@ -37,10 +37,23 @@ bool AppDelegate::applicationDidFinishLaunching()
     pDirector->setAnimationInterval(1.0 / 60);
 
     // create a scene. it's an autorelease object
-    CCScene *pScene = HelloWorld::scene();
-
+    //CCScene *pScene = HelloWorld::scene();
+    //ßpDirector->runWithScene(pScene);
+    
+    CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("ui.plist");
+	SimpleAudioEngine::sharedEngine()->preloadEffect("pick.mp3");
+	SimpleAudioEngine::sharedEngine()->preloadBackgroundMusic("music.mp3");
+	SimpleAudioEngine::sharedEngine()->preloadBackgroundMusic("jiansu.mp3");
+	SimpleAudioEngine::sharedEngine()->playBackgroundMusic("music.mp3");
+	SimpleAudioEngine::sharedEngine()->setEffectsVolume(.3);
+    
+	//◊‘∂Ø Õ∑≈¿‡–ÕµƒScene
+    MenuScene * scene = MenuScene::create();
+	// SpriteScene * scene = SpriteScene::create();
+	
     // run
-    pDirector->runWithScene(pScene);
+    pDirector->runWithScene(scene);
+
 
     return true;
 }

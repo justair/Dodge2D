@@ -90,4 +90,8 @@ void MenuLayer::menuCloseCallback(CCObject* pSender)
 {
     CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic();
 	CCDirector::sharedDirector()->end();
+    
+    #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+        exit(0);
+    #endif
 }

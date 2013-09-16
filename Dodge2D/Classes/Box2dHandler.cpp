@@ -15,7 +15,7 @@ bool Box2dHandler::init()
     
 	initBox2D();
     
-	initDebugDraw();
+	//initDebugDraw();
 	
 	this->scheduleUpdate();
     
@@ -55,7 +55,57 @@ void Box2dHandler::addFixtureForSprite(B2Sprite* sprite, double density)
     CCSize size = sprite->getContentSize();
     
     b2PolygonShape spriteShape;
-    spriteShape.SetAsBox(size.width / PTM_RATIO/2, size.height / PTM_RATIO/2);
+    if(sprite->getTag() == FLOWER){
+        int num = 7;
+        b2Vec2 verts[] = {
+            b2Vec2(0.0f / PTM_RATIO, 31.6f / PTM_RATIO),
+            b2Vec2(-27.5f / PTM_RATIO, 17.0f / PTM_RATIO),
+            b2Vec2(-25.3f / PTM_RATIO, -18.7f / PTM_RATIO),
+            b2Vec2(1.6f / PTM_RATIO, -30.8f / PTM_RATIO),
+            b2Vec2(30.4f / PTM_RATIO, -11.5f / PTM_RATIO),
+            b2Vec2(25.2f / PTM_RATIO, 19.1f / PTM_RATIO),
+            b2Vec2(-1.0f / PTM_RATIO, 31.0f / PTM_RATIO)
+        };
+        spriteShape.Set(verts, num);
+    }else if(sprite->getTag() == ITEM){
+        int num = 4;
+        b2Vec2 verts[] = {
+            b2Vec2(3.6f / PTM_RATIO, 24.9f / PTM_RATIO),
+            b2Vec2(-9.1f / PTM_RATIO, 24.4f / PTM_RATIO),
+            b2Vec2(-34.6f / PTM_RATIO, -21.3f / PTM_RATIO),
+            b2Vec2(34.9f / PTM_RATIO, -21.9f / PTM_RATIO)
+        };        spriteShape.Set(verts, num);
+    }else if(sprite->getTag() == ENEMY){
+        int num = 7;
+        b2Vec2 verts[] = {
+            b2Vec2(20.4f / PTM_RATIO, 46.5f / PTM_RATIO),
+            b2Vec2(-18.3f / PTM_RATIO, 44.0f / PTM_RATIO),
+            b2Vec2(-31.6f / PTM_RATIO, 28.0f / PTM_RATIO),
+            b2Vec2(-27.1f / PTM_RATIO, -41.4f / PTM_RATIO),
+            b2Vec2(22.1f / PTM_RATIO, -42.7f / PTM_RATIO),
+            b2Vec2(32.9f / PTM_RATIO, -27.0f / PTM_RATIO),
+            b2Vec2(30.4f / PTM_RATIO, 32.3f / PTM_RATIO)
+        };
+      spriteShape.Set(verts, num);
+    }else if(sprite->getTag() == SELF){
+        int num = 8;
+        b2Vec2 verts[] = {
+            b2Vec2(30.7f / PTM_RATIO, 51.2f / PTM_RATIO),
+            b2Vec2(-32.5f / PTM_RATIO, 38.9f / PTM_RATIO),
+            b2Vec2(-44.2f / PTM_RATIO, 2.0f / PTM_RATIO),
+            b2Vec2(-23.2f / PTM_RATIO, -19.0f / PTM_RATIO),
+            b2Vec2(-5.0f / PTM_RATIO, -56.8f / PTM_RATIO),
+            b2Vec2(1.4f / PTM_RATIO, -55.3f / PTM_RATIO),
+            b2Vec2(17.0f / PTM_RATIO, -18.6f / PTM_RATIO),
+            b2Vec2(44.6f / PTM_RATIO, 8.8f / PTM_RATIO)
+        };
+        spriteShape.Set(verts, num);
+    }
+    else{
+        spriteShape.SetAsBox(size.width / PTM_RATIO/2, size.height / PTM_RATIO/2);
+    }
+    
+    
     spriteShapeDef.shape = &spriteShape;
     
     //b2CircleShape dynamicBox;
@@ -63,6 +113,8 @@ void Box2dHandler::addFixtureForSprite(B2Sprite* sprite, double density)
     //spriteShapeDef.shape = &dynamicBox;
     
     spriteShapeDef.density = density;
+    //有碰撞检测无碰撞反应
+    spriteShapeDef.isSensor =true;
     
     b2Body * spriteBody = sprite->getB2Body();
     spriteBody->CreateFixture(&spriteShapeDef);
@@ -75,6 +127,7 @@ void Box2dHandler::addBodyForSprite(B2Sprite* sprite, double density)
     spriteBodyDef.position.Set(sprite->getPosition().x / PTM_RATIO,
                                sprite->getPosition().y / PTM_RATIO);
     spriteBodyDef.userData = sprite;
+    
     
     b2Body *spriteBody = m_world->CreateBody(&spriteBodyDef);
     sprite->setB2Body(spriteBody);
@@ -123,9 +176,9 @@ void Box2dHandler::draw()
     
     ccGLEnableVertexAttribs(kCCVertexAttribFlag_Position);
     
-    kmGLPushMatrix();  //OpenGL±£¥Ê◊¥Ã¨
+    /*kmGLPushMatrix();  //OpenGL±£¥Ê◊¥Ã¨
     m_world->DrawDebugData();    //ªÊ÷∆µ˜ ‘Õº–Œ
-    kmGLPopMatrix();  //OpenGLª÷∏¥◊¥Ã¨
+    kmGLPopMatrix();*/  //OpenGLª÷∏¥◊¥Ã¨
 }
 
 void Box2dHandler::addSelfRole(B2Sprite * self){

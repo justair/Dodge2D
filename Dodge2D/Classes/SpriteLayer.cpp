@@ -517,6 +517,7 @@ void SpriteLayer::onCrash(B2Sprite *first,B2Sprite *sencand)
     
     switch (sencand->getTag()) {
         case FLOWER:
+        {
             showCoin(sencand->getPosition());
             addFlower();
             if(rand()%100 < g_dropRate){
@@ -526,8 +527,9 @@ void SpriteLayer::onCrash(B2Sprite *first,B2Sprite *sencand)
             _box2d->removeSprite(sencand);
             this->removeChild(sencand);
             break;
-        
+        }
         case ITEM:
+        {
             showBomb(sencand->getPosition());
             _itemArr->removeObject(sencand);
             _box2d->removeSprite(sencand);
@@ -538,12 +540,13 @@ void SpriteLayer::onCrash(B2Sprite *first,B2Sprite *sencand)
             CCAction* revertAction = CCSequence::create(revertTime,revertSpeed,NULL);
             this->runAction(revertAction);
             break;
-            
+        }
         case ENEMY:
+        {
             EndScene* end = EndScene::create();
             CCDirector::sharedDirector()->replaceScene(end);
             break;
-            
+        }
         default:
             break;
     }
